@@ -39,13 +39,27 @@ body {
   color: #fff;
   .main-text {
     letter-spacing: 6px;
-    font-size: 70px;
+    font-size: 100px;
     margin-bottom: 20px;
   }
   .sub-text {
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
+  }
+
+  @media screen and (max-width: 400px) {
+    .main-text {
+      letter-spacing: 6px;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .sub-text {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    }
   }
 }
 
@@ -64,21 +78,35 @@ body {
 .para-one {
   width: 50%;
   float: left;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 .para-two {
   width: 50%;
   float: left;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
  
 /*----- Menu -----*/
   .menu {
     width:100%;
     background:#ff5a5f;
+
+
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
   }
 
 .menu ul {
   display:inline-block;
+
 }
  
 .menu li {
